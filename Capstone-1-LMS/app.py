@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = 'supersecretkey'
 
 # Configure MySQL connection
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:Sagar7724864521@localhost:3306/Capstone11'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:password@localhost:3306/Capstone11'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
