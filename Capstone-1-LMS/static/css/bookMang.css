@@ -1,0 +1,106 @@
+body {
+  background-image: url(../css/Images/Lib3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.container {
+  width: 90%;
+  max-width: 600px;
+  border-radius: 15px;
+  border: 3px solid black;
+  background-color:rgb(0 0 0 / 54%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  text-align: center;
+}
+
+h1, h2, h3 {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input[type="text"], input[type="password"], button {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 800;
+  font-size: larger;
+  text-align: center;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+  .container {
+      padding: 15px;
+      width: 100%;
+      border-radius: 10px;
+  }
+
+  h1, h2, h3 {
+      font-size: 1.5em;
+  }
+
+  input[type="text"], input[type="password"], button {
+      font-size: medium;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      padding: 10px;
+      width: 100%;
+      border-radius: 5px;
+  }
+
+  h1, h2, h3 {
+      font-size: 1.2em;
+  }
+
+  input[type="text"], input[type="password"], button {
+      font-size: small;
+  }
+}

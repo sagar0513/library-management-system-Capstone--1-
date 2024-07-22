@@ -1,0 +1,158 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url("images/Lib5.jpg"); /* Replace with your actual image URL */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.header-container {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+  border-radius: 10px;
+}
+
+.header-container h1 {
+  font-size: 48px; /* Larger font size */
+  font-weight: bold; /* Bold text */
+  margin-bottom: 10px;
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.header-container p {
+  font-size: 24px; /* Larger font size */
+  font-style: italic; /* Italic text */
+  margin-bottom: 20px;
+}
+
+.login-container {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 30px; /* Increased padding for more space */
+  width: 400px;
+  box-shadow: 0 0 1px 2px rgb(0 0 0);
+  backdrop-filter: blur(0px) saturate(180%); /* Enhanced frosted glass effect */
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  border: 1px solid rgb(255 255 255 / 49%);
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  text-align: center; /* Center align all text */
+}
+
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 24px; /* Increased font size for better readability */
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 20px;
+  color: #0dff00;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  width: 100%;
+  padding: 12px; /* Increased padding for better usability */
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 25px; /* More rounded corners */
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.2); /* Glassmorphism effect */
+  color: #000000;
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+input:focus {
+  border-color: #007bff; /* Border color on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Subtle glow effect */
+}
+
+#btn {
+  position: relative;
+  left: 70px;
+  align-items: center;
+  width: 50%;
+  padding: 6px;
+  font-size: 18px;
+  border: none;
+  background-color: #c5ff00e8;
+  color: #000000;
+  cursor: pointer;
+  border-radius: 20px; /* More rounded corners */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+#btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+.form-group .error-message {
+  color: #ff0000;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .login-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .form-group input[type="text"],
+  .form-group input[type="password"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+/* Additional hover effect for the container */
+.login-container:hover {
+  box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Slightly deeper shadow */
+}
